@@ -2,7 +2,7 @@
 ## Includes
 
 1. Playwright with Javascript  
-2. Page Object Model (POM) pattern  
+2. Page Object Model(POM) pattern  
 3. Github Actions
 
 ### Installation Guide

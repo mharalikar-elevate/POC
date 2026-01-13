@@ -1,8 +1,7 @@
 import {Page} from "@playwright/test";
 
 class HomePage{
-
-   /**
+    /**
      * @param {import('@playwright/test').Page} page
      */
     constructor(page) {
@@ -18,5 +17,4 @@ class HomePage{
         await this.signInLink.innerText();
     }
 }
-
 module.exports = {HomePage};

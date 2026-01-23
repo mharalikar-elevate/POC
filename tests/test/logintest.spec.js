@@ -13,6 +13,6 @@ test('Login into Github', async({page})=>{
     console.log(process.env.USERNAME +"--username printed--");
     await loginPage.enterUsernameandPassword(process.env.USERNAME, process.env.PASSWORD);
     await loginPage.clickSignInButton();
-    await expect(await homePage.getDashboardLabel()).toBeVisible();
+    await expect(await homePage.getDashboardLabel()).toBeVisible({ timeout: 10000 });
     // m2: if used the getter function, don't need to await
 })

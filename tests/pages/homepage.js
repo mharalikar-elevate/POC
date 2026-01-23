@@ -6,15 +6,18 @@ class HomePage{
      */
     constructor(page) {
         this.page = page;
-        this.signInLink = page.getByRole('link', {name:"Sign In"});
+        this.dashboardLabel = page.locator("//span[text()='Dashboard']");
     }
 
-    async goTo(){
-        await this.page.goto("https://github.com/")
+
+    async getDashboardLabel(){
+       return this.dashboardLabel;
     }
 
-    async getButtonContentHomepage(){
-        await this.signInLink.innerText();
+    /* m2: make this a getter function
+    get getDashboardLabel(){
+       return this.dashboardLabel;
     }
+    */
 }
 module.exports = {HomePage};

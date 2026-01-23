@@ -9,8 +9,15 @@ class HomePage{
         this.dashboardLabel = page.locator("//span[text()='Dashboard']");
     }
 
+
     async getDashboardLabel(){
-       return await this.dashboardLabel;
+       return this.dashboardLabel;
     }
+
+    /* m2: make this a getter function
+    get getDashboardLabel(){
+       return this.dashboardLabel;
+    }
+    */
 }
 module.exports = {HomePage};

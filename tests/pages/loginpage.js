@@ -8,7 +8,7 @@ class LoginPage{
         this.page = page;
         this.Username = page.getByLabel('Username', {exact:false});
         this.Password = page.getByLabel('Password', {exact:false});
-        this.signInLink = page.getByRole('button', {name:"Sign in"});
+        this.signInLink = page.getByRole('button', {name:"Sign in", exact: true });
     }
 
     async enterUsernameandPassword(username, password){
